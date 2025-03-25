@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MySchemes/states.in</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            background-image: url("");
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 10px 20px;
+        }
+
+        .header .logo {
+            font-size: 25px;
+            font-family: 'Sriracha', cursive;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #000;
+            padding: 10px 15px;
+        }
+
+        /* Main Section Styles */
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 520px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+                url("tiranga.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .intro p {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .intro button {
+            background-color: #5edaf0;
+            color: #000;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Achievements Section Styles */
+        .achievements {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .achievements .work {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .achievements .work i {
+            font-size: 50px;
+            color: #333333;
+            border-radius: 50%;
+            border: 2px solid #333333;
+            padding: 12px;
+        }
+
+        .achievements .work .work-heading {
+            font-size: 20px;
+            color: #333333;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+
+        .achievements .work .work-text {
+            font-size: 15px;
+            color: #585858;
+            margin: 10px 0;
+        }
+
+        /* About Me Section Styles */
+        .about-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            border-top: 2px solid #eeeeee;
+        }
+
+        .about-me img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-me-text h2 {
+            font-size: 30px;
+            color: #333333;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .about-me-text p {
+            font-size: 15px;
+            color: #585858;
+            margin: 10px 0;
+        }
+
+        /* Footer Styles */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #302f49;
+            padding: 20px;
+        }
+
+        .footer .copy {
+            color: #fff;
+        }
+
+        .bottom-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .bottom-links .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .bottom-links .links span {
+            font-size: 20px;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 10px 0;
+        }
+
+        .bottom-links .links a {
+            text-decoration: none;
+            color: #a1a1a1;
+            padding: 10px 20px;
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: black;
+            border-radius: 30px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: wheat;
+        }
+
+        /* Additional Styles */
+        .whitebackground {
+            background: url("white_background.jpg");
+            padding: 20px;
+        }
+
+        #outer {
+            width: 100%;
+            text-align: center;
+        }
+
+        .inner {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">My Schemes</a>
+        <nav class="nav-items">
+            <a href="homepage.html">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Categories</a>
+            <a href="#">Language</a>
+            <a href="#">Contact us</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1>Welcome to My Schemes</h1>
+        <p>Explore and choose schemes from your state or union territory.</p>
+        <button class="button">Explore Now</button>
+    </div>
+
+    <div class="whitebackground">
+        <div class="achievements">
+            <!-- ... (existing content) ... -->
+            <div class="cont-inr" >
+                <div class="page-title left">
+                  <h2>States and Union Territories</h2>
+                </div>
+                <p> India, a union of states, is a Sovereign, Secular, Democratic Republic with a Parliamentary system of
+                  Government. The President is the constitutional head of Executive of the Union. In the states, the Governor,
+                  as the representative of the President, is the head of Executive. The system of government in states closely
+                  resembles that of the Union. There are 28 states and 8 Union territories in the country. Union Territories are
+                  administered by the President through an Administrator appointed by him/her. From the largest to the smallest,
+                  each State/<acronym title="Union Territory">UT</acronym> of India has a unique demography, history and
+                  culture, dress, festivals, language etc. This section introduces you to the various States/ UTs in the Country
+                  and urges you to explore their magnificent uniqueness...</p>
+              </div>
+              <div class="whitebackground">
+              <div class="page-list prof stateut">
+                <h1>States and Capitals Choose schemes from your state </h1>
+                <div class="innr-cont mrgn-none">
+                  <div class="page-menu">
+          <div id="outer">
+                    <ul>
+                      
+                        <h3><a href="https://www.ap.gov.in/" target="_blank"
+                            title="External website that opens in a new window" ><button class="button">Andhra
+                              Pradesh<em>(Amaravati)</em></button><span class="strong"><i class="fa fa-link"></i></span></a>
+                        </h3>
+                      
+                      
+                        <h3><a href="https://www.arunachalpradesh.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Arunachal
+                              Pradesh<em>(Itanagar)</em></button><span class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                      
+                        <h3><a href="https://assam.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button
+                              class="button">Assam<em>(Dispur)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                      
+                        <h3><a href="https://state.bihar.gov.in/main/CitizenHome.html" target="_blank"
+                            title="External website that opens in a new window"><button
+                              class="button">Bihar<em>(Patna)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                  
+                      
+                        <h3><a href="https://www.cgstate.gov.in/en/web/guest/home" target="_blank"
+                            title="External website that opens in a new window"><button
+                              class="button">Chhattisgarh<em>(Raipur)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                
+                        <h3><a href="https://www.goa.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Goa<em>(Panaji)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://gujaratindia.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Gujarat<em>(Gandhinagar)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+          
+                    </ul>
+                  
+                  <div class="page-menu">
+                    <ul>
+                      
+                        <h3><a href="https://haryana.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Haryana<em>(Chandigarh)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://himachal.gov.in/en-IN/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Himachal Pradesh<em>(Shimla)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+          
+                      
+                        <h3><a href="https://www.jharkhand.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Jharkhand<em>(Ranchi)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://www.karnataka.gov.in/english" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Karnataka<em>(Bangalore)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://kerala.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Kerala<em>(Thiruvananthapuram)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://mp.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Madhya Pradesh<em>(Bhopal)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://www.maharashtra.gov.in/1125/Home" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Maharashtra<em>(Mumbai)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                    
+                    </ul>
+                  </div>
+                  <div class="page-menu">
+                    <ul>
+                      
+                        <h3 class="list"><a href="https://manipur.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Manipur<em>(Imphal)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3 class="list"><a href="https://meghalaya.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Meghalaya<em>(Shillong)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://mizoram.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Mizoram<em>(Aizawl)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://www.nagaland.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Nagaland<em>(Kohima)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://odisha.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Odisha<em>(Bhubaneshwar)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://punjab.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Punjab<em>(Chandigarh)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://www.rajasthan.gov.in/Pages/default.aspx" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Rajasthan<em>(Jaipur)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                    </ul>
+                  </div>
+                  <div class="page-menu">
+                    <ul>
+                      
+                        <h3><a href="https://sikkim.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Sikkim<em>(Gangtok)</button></em><span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                      
+                        <h3><a href="https://www.tn.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Tamil Nadu<em>(Chennai)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="http://www.telangana.gov.in" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Telangana<em>(Hyderabad)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://tripura.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Tripura<em>(Agartala)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://uk.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Uttarakhand<em>(Dehradun)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="http://up.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Uttar Pradesh<em>(Lucknow)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://wb.gov.in/index.aspx" target="_blank"
+                            title="External website that opens in a new window"><button class="button">West Bengal<em>(Kolkata)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                    </ul>
+                  </div>
+          
+                </div>
+              </div>
+              <div class="page-list prof stateut">
+                <h1>Union Territories</h1>
+                <div class="innr-cont mrgn-btm40">
+                  <div class="page-menu">
+                    <ul>
+                      <div id="outer">
+                      
+                        <h3><a href="https://www.andaman.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Andaman and Nicobar Islands<em>(Port
+                              Blair)</button></em><span class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="http://chandigarh.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Chandigarh<em>(Chandigarh)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                    
+                  
+                  <div class="page-menu">
+                    <ul>
+          
+                        <h3><a href="https://ddd.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Dadra and Nagar Haveli and <br />Daman &amp; Diu
+                              <em>(Daman)</button></em><span class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://delhi.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">The Government of NCT of
+                              Delhi<em>(Delhi)</button></em><span class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                    </ul>
+                  </div>
+                  <div class="page-menu">
+                    <ul>
+          
+                      
+                        <h3><a href="https://jk.gov.in/jammukashmir/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Jammu &amp;
+                              Kashmir<em>(Srinagar<i>-S</i>*<i>,</i> Jammu<i>-W</i>*)</button></em> <span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                      
+                        <h3><a href="http://ladakh.nic.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Ladakh<em>(Leh)</button></em> <span class="strong"><i
+                                class="fa fa-link"></i></span></a></h3>
+                      
+                    </ul>
+                    <ul>
+          
+                        <h3><a href="https://lakshadweep.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Lakshadweep<em>(Kavaratti)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                      
+                        <h3><a href="https://www.py.gov.in/" target="_blank"
+                            title="External website that opens in a new window"><button class="button">Puducherry<em>(Puducherry)</button></em><span
+                              class="strong"><i class="fa fa-link"></i></span></a></h3>
+                              <p>India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress since Independence. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west.</p>
+                      
+                    
+                      </div></div>
+                    </ul>
+                     
+</div> 
+</div>
+</main>
+</head>
+<body>
+
+</body>
+</html>
